@@ -19,12 +19,23 @@
 
             <div id="formulario">
                 <form action="cadastro.php">
-                    <label for="inome"></label>
-                    <input type="text" name="nome" id="inome" required minlength="6" placeholder="Seu usuário"> <br>
-                    <label for="isenha"></label>
-                    <input type="password" name="senha" id="isenha" required minlength="8" placeholder="Mínimo 8"> <br>
-                    <input type="submit" value="Entrar" id="enviar"> <br>
-                    <input type="button" value="Esqueci a senha" id="esqueci">
+
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="text" name="email" id="iemail" required minlength="6" placeholder="Seu e-mail" autocomplete="email">
+                        <label for="inome"></label>
+                    </div>
+
+                    <div class="campo">
+                        <span class="material-symbols-outlined">key</span>
+                        <input type="password" name="senha" id="isenha" required minlength="8" placeholder="Mínimo 8" autocomplete="current-password">
+                        <label for="isenha"></label>
+                    </div>
+
+                    <input type="submit" value="Entrar" id="entrar">
+                    <a href="esqueci.html" class="botao">
+                        Esqueci a senha <span class="material-symbols-outlined">mail</span>
+                    </a>
                 
                 </form>
             </div>

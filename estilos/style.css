@@ -7,7 +7,7 @@
 }
 
 body, html {
-    background-color: rgb(180, 1, 180);
+    background-color: #5f2c82;
     height: 100vh;
     width: 100vw;
     font-family: system-ui, '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -29,7 +29,7 @@ section#login {
 
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 550px;
     border-radius: 20px;
     text-align: center;
 
@@ -46,7 +46,14 @@ section#login {
     height: 150px;
 }
 
+
+div#formulario {
+    display: block;
+    padding: 10px;
+}
+
 h1 {
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
@@ -56,34 +63,72 @@ p {
     text-align: justify;
 }
 
-#formulario {
+form > div.campo {
+    background-color: #5f2c82;
     display: block;
-    padding: 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
 }
 
-#inome {
-    width: 195px;
-    height: 35px;
-    background-color: rgb(112, 0, 112);
-    color: white;
-    border-radius: 5px;
-    border-style: none;
+div.campo > label {
+    display: none;
 }
 
-#isenha {
-    width: 195px;
-    height: 35px;
-    background-color: rgb(112, 0, 112);
+div.campo {
     color: white;
+    background-color: black;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #5bc2be;
+    width: calc(100% - 60px);
+    height: 100%;
+    border: 0px;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+form > input[type=submit] {
+    display: block;
+    width: 100%;
+    height: 40px;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    background-color: #49a09d;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: #377976;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: #69d3cf;
+    color: #214644;
+    border: 1px solid #49a09d;
     border-style: none;
     border-radius: 5px;
 }
 
-#enviar {
-    width: 258px;
-    height: 43px;
-    border-radius: 5px;
-    border-style: none;
-    background-color: rgb(5, 187, 187);
-    color: white;
+form > a.botao:hover {
+    background-color: #81f1ee;
+}
+
+form > a.botao > span {
+    font-size: 0.8em;
+
 }
