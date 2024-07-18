@@ -7,17 +7,8 @@
     }
     
     section#login {
-        width: 650px
-    }
-
-    section#login > h1 {
-        font-size: 2.3em;
-        padding: 20px;
-    }
-
-    section#login > p {
-        font-size: 1em;
-        padding: 30px;
+        width: 750px;
+        height: 320px;
     }
 
     #login  > div#imagem {
@@ -32,7 +23,11 @@
     section#login > div#formulario {
         float: right;
         width: 70%;
+    }
 
+    p {
+        max-width: 98%;
+        transform: translateX(10px);
     }
 }
 
@@ -43,24 +38,33 @@
     }
 
     section#login {
-        width: 990px;
-        height: 50vh;
+        width: 930px;
+        height: 350px;
     }
-
-    #login > div#imagem {
-
+ 
+    div#imagem {
 
         background-position: center top;
-        background-size: contain;
+        background-size: cover;
 
         float: right;
         width: 50%;
-        height: 100vh;
+        height: 350px;
     }
 
     section#login > div#formulario {
         float: left;
         width: 50%;
-        height: 100vh;
+        height: 100%;
+    }
+
+    div#formulario > h1 {
+        font-size: 2em;
+    }
+
+    p {
+        width: 460px;
+        font-size: 0.8em;
+        font-size: 1em;
     }
 }
